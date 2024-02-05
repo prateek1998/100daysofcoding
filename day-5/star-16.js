@@ -1,4 +1,4 @@
-// Write code to make this star pattern
+// Write code to make this number pattern
 //  1
 //  1 2
 //  1   3
