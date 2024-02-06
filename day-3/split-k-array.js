@@ -11,12 +11,9 @@ function splitArr(ar, k) {
     let tmpAr = [];
     for (let windowEnd = 0; windowEnd < len; windowEnd++) {
         tmpAr.push(ar[windowEnd]);
-        if (windowEnd % k === k - 1) {
+        if (windowEnd % k == k - 1 || windowEnd == len - 1) {
             finalArr.push(tmpAr);
             tmpAr = [];
-        }
-        if (windowEnd === len - 1 && tmpAr.length) {
-            finalArr.push(tmpAr);
         }
     }
     console.log(finalArr);
